@@ -1,0 +1,43 @@
+{
+    "name": "cliveportman/csv-to-json",
+    "description": "Takes a CSV file and converts each row into a keyed array.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "csv to json array"
+    ],
+    "support": {
+        "docs": "https://github.com/cliveportman/csv-to-json/blob/master/README.md",
+        "issues": "https://github.com/cliveportman/csv-to-json/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clive Portman",
+            "homepage": "https://clive.theportman.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "cliveportman\\csvtojson\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CSV to JSON",
+        "handle": "csv-to-json",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/cliveportman/csv-to-json/master/CHANGELOG.md",
+        "components": {
+            "base": "cliveportman\\csvtojson\\services\\Base"
+        },
+        "class": "cliveportman\\csvtojson\\CsvToJson"
+    }
+}
